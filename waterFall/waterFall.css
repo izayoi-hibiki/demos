@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    position: relative;
+}
+.box{
+    float: left;
+}
+.pic{
+    border: solid 1px;
+}
+.pic img{
+    width: 200px;
+}
