@@ -1,7 +1,7 @@
 window.onload=function () {
 //$(document).ready不需要图片加载完成就执行,第一次访问时出现图片错位
     appendToDOM();
-    setTimeout(waterFall,100);
+    setTimeout(waterFall,1000);
 
     $(window).on("scroll", function () {
         if (checkWillLoad()) {
