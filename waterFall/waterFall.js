@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+window.onload=function () {
+//$(document).ready不需要图片加载完成就执行,第一次访问时出现图片错位
     appendToDOM();
     setTimeout(waterFall,100);
 
@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
 
 
-});
+};
 
 function waterFall() {
     var allBox = $("#main > .box");
@@ -41,7 +41,7 @@ function waterFall() {
             });
             heightArr[minBoxIndex] += boxHeight;
         }
-        console.log(heightArr + "是heightArr的值");
+        // console.log(heightArr + "是heightArr的值");
     });
 }
 
